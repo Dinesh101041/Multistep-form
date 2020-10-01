@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <!-- jQuery easing library -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
+
+   <!-- css -->
+  <link rel="stylesheet" href="assets/CSS/app.css" >
+  <link rel="stylesheet" href="assets/CSS/apprespond.css" >
+
+
+   <!-- font -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@700&family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+  
+
+</head>
+<body>
+
+
+   <!-- multistep form -->
+
+<form id="msform" name="applyform" action="app.php" method="post">
+   <!-- progressbar -->
+   <ul id="progressbar">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+   
+   </ul>
+   <!-- fieldsets 1-->
+   <fieldset class="pageone" id="fieldset-1">
+      <input type ="text" id="username" class="username" name="username" placeholder="Enter Your Name" required/>
+      <input type ="date" name="date" id="birthDate" placeholder="Enter D-O-B" required/>
+
+      <div id="genradio" >
+         <p style="color: black;"  class="gender">Gender</p>
+         <input type="radio"  name="gender" value="male" id="male" required />
+         <label for="male" id="contradio">Male</label><br>
+         <input type="radio"  name="gender" value="female" required/>
+         <label for="female" id="contradio" class="gen">Female</label><br>
+         <input type="radio"  name="gender" value="other" required/> 
+         <label for="other" id="contradio">Other</label>
+         <span class="error">Please select one...</span>
+      </div>
+
+      <input type ="text" name="mobile-number" class="ph-no" id="mob-number" placeholder="Enter Mobile No" />
+
+      <input type ="email" name="email"  id="mail-id" placeholder="Enter Mail-ID" />
+      <span id="error" style="display:none;color:red;">Enter valid email address</span> 
+
+      <select id="state" class="residence" name="location" size="1" >
+         <option value="" disabled selected>location</option>
+         <option value="Andhra-Pradeshe">Andhra Pradesh</option>
+         <option value="Arunachal-Pradesh">Arunachal Pradesh</option>
+         <option value="Assam">Assam</option>
+         <option value="Biharr">Bihar</option>
+         <option value="Chhattisgarh"> Chhattisgarh</option>
+         <option value="Goa">Goa</option>
+         <option value="Gujarat">Gujarat</option>
+         <option value="Haryana">Haryana</option>
+         <option value="Himachal-Pradesh">Himachal Pradesh</option>
+         <option value="Jammu-Kashmi">Jammu and Kashmir</option>
+         <option value="Jharkhand">Jharkhand </option>
+         <option value="Karnataka">Karnataka</option>
+         <option value="Kerala">Kerala</option>
+         <option value="Madhya-Pradesh">Madhya Pradesh</option>
+         <option value="Maharashtrar">Maharashtra</option>
+         <option value="Manipurr">Manipur</option>
+         <option value="Meghalaya">Meghalaya</option>
+         <option value="Mizoram">Mizoram</option>
+         <option value="Nagalandr">Nagaland</option>
+         <option value="Odishar">Odisha</option>
+         <option value="Punjab"> Punjab</option>
+         <option value="Rajasthan">Rajasthan</option>
+         <option value="Sikkim">Sikkim</option>
+         <option value="Tamil">Tamil Nadu</option>
+         <option value="Telugana">Telugana</option>
+         <option value="Tripura">Tripura </option>
+         <option value="Uttar">Uttar Pradesh</option>
+         <option value="Uttarakhand">Uttarakhand</option>
+         <option value="West">West Bengal</option>
+      </select>
+
+      <input type="text" id="education" name="qualification" placeholder="Educational Qualification"  />
+
+      <div class="orgcheck">
+         <p style="color: black;" id="resgender" class="gender">Lorem Ipsum</p>
+         <p style="color: black;" class="checkdesc">[Choose all that apply]</p>
+
+
+         <label><input type="checkbox" name="orgone[]" value="Lorem Ipsum" class="org"/>Lorem Ipsum</label><br>
+
+        <label><input type="checkbox" name="orgone[]" class="org" value="Lorem Ipsum" />Lorem Ipsum</label><br> 
+
+         <label><input type="checkbox"  name="orgone[]" class="org" value="Lorem Ipsum" />Lorem Ipsum</label><br>
+
+         <label><input type="checkbox" name="orgone[]" class="org" value="Lorem Ipsum"/>Lorem Ipsum</label><br>
+       
+
+         <label><input type="checkbox"  name="orgone[]" class="org" value="Lorem Ipsum" />Lorem Ipsum</label><br>
+       
+
+         <label><input type="checkbox"  name="orgone[]" class="org" value="Lorem Ipsum" />Lorem Ipsum</label><br>
+
+        <label><input type="checkbox"  name="orgone[]"  class="org" value="Lorem Ipsum" >Lorem Ipsum</label><br>
+         
+        <label><input type="checkbox"  id ="none" name="orgone[]" value="NONE" />NONE</label><br>
+
+        <label> <input type="checkbox" class="other" id="myCheck" name="orgone[]" />Other</label>
+         <span class="error">Please select one...</span>
+      </div>
+
+
+      <input type="button" name="next" id="next"  class="next action-button" value="Next" />
+   </fieldset>
+
+
+   <!-- -------------------------field set 2 --------------- -->
+   <fieldset>
+      <h2 class="fs-title">Lorem Ipsum</h2>
+
+      <input type ="text" id="compname" class="companyname" name="company-name" placeholder="Lorem Ipsum" required/>
+
+      <input type="text" name="businessage" id="companyage" placeholder="Lorem Ipsum" required/>
+
+      <div id="gen-business">
+         <p style="color: black;" class="gender">Lorem Ipsum </p>
+         <input type="radio"  name="business-gen" value="1st generation business" required>
+         <label for="male" id="businessone">Lorem Ipsum</label><br>
+         <input type="radio"  name="business-gen" value="2nd generation business" >
+         <label for="female" id="businessone"  >Lorem Ipsum</label><br>
+         <input type="radio"  name="business-gen" value="3rd generation business" >
+         <label for="female" id="businessone" >Lorem Ipsum</label><br>
+         <input type="radio"  name="business-gen" value="other">
+         <label for="other" id="businessone">Lorem Ipsum</label>
+         <span class="error">Please select one...</span>
+      </div>
+
+      <input type ="text" id="authmaking" class="authorityname" name="authority" placeholder="Lorem Ipsum" required>
+
+      <div class="business-sectors">
+         <p style="color: black;" class="gender">Lorem</p>
+         <input type="checkbox" name="sectors[]" value="Lorem" >
+         <label for="sectors"  id="contcheck" >Lorem</label><br>
+         <input type="checkbox" name="sectors[]" value="Lorem">
+         <label for="sectors"  id="contcheck"  >Lorem</label><br>
+         <input type="checkbox"  name="sectors[]" value="Lorem">
+         <label for="sectors" id="contcheck" >Lorem</label><br>
+         <input type="checkbox"  name="sectors[]" value="Lorem">
+         <label for="sectors" id="contcheck"  >Lorem</label><br>
+         <input type="checkbox"  name="sectors[]" value="Lorem">
+         <label for="sectors" id="contcheck" >Lorem</label><br>
+         <label><input type="checkbox" name="sectors[]" id="hospital" value="Lorem">Lorem</label><br>
+         <input type="checkbox"  name="sectors[]" value="Consultancy">
+         <label for="sectors" id="contcheck"  >Lorem</label><br>
+         <input type="checkbox"  name="sectors[]" value="Manufacturing">
+         <label for="sectors" id="contcheck" >Lorem</label><br>
+         <input type="checkbox"  name="sectors[]" value="Processing">
+         <label for="sectors" id="contcheck">Lorem</label><br>
+         <input type="checkbox"  name="sectors[]" value="Real estate">
+         <label for="sectors" id="contcheck"  >Lorem</label><br>
+         <input type="checkbox"  name="sectors[]" value="Tech">
+         <label for="sectors" id="contcheck"  >Lorem</label><br>
+         <input type="checkbox"  name="sectors[]" value="Service">
+         <label for="sectors" id="contcheck">Lorem</label><br>
+         <input type="checkbox"  name="sectors[]" value="Trading">
+         <label for="sectors"  id="contcheck"  >Lorem</label><br>
+         <input type="checkbox" name="sectors[]" id="contcheck">
+         <label for="myCheck">Other</label> 
+         <span class="error">Please select one...</span>
+      </div>   
+     
+
+      <input type="text" class="numemployee" name="employee" id="comp-employee" placeholder="Number of employees in your company" required/>
+
+      <div class="turnover">
+
+         <p style="color: black;" class="gender">Lorem Ipsum</p>
+         <input type="radio"  name="turnradio" value="Less than 25 lakhs" required>
+         <label for="male" id="moneyone" >Lorem Ipsum</label><br>
+         <input type="radio"  name="turnradio" value="Lorem Ipsum" >
+         <label for="female" id="moneyone" class="gen">25-50 lakhs</label><br>
+         <input type="radio"  name="turnradio" value="Lorem Ipsum" >
+         <label for="female" id="moneyone" class="gen" >50 lakhs-1 crore</label><br>
+         <input type="radio"  name="turnradio" value="Lorem Ipsum" >
+         <label for="female" id="moneyone" class="gen">Lorem Ipsum</label><br>
+         <input type="radio"  name="turnradio" value="Lorem Ipsum" >
+         <label for="female" id="moneyone" class="gen">Lorem Ipsum</label><br>
+         <input type="radio"  name="turnradio" value="Lorem Ipsum" >
+         <label for="female" id="moneyone" class="gen">Lorem Ipsum</label><br>
+         <input type="radio"  name="turnradio" value="Lorem Ipsum" >
+         <label for="female" id="moneyone" class="gen">Lorem Ipsum</label><br>
+         <input type="radio"  name="turnradio" value="Lorem Ipsum" >
+         <label for="female" id="moneyone" class="gen">Lorem Ipsum</label><br>
+         <input type="radio"  name="turnradio" value="Lorem Ipsum" >
+         <label for="female" id="moneyone" class="gen">Lorem Ipsum</label><br>
+         <input type="radio"  name="turnradio" value="Lorem Ipsum" >
+         <label for="female" id="moneyone" class="gen">Lorem Ipsum</label><br>
+         <input type="radio"  name="turnradio" value="Lorem Ipsum" >
+         <label for="female" id="moneyone" class="gen">>Lorem Ipsum</label><br>
+         <input type="radio"  name="turnradio" value="other">
+         <label for="other"  name="turnradio" id="moneyone">Lorem Ipsum</label>
+         <span class="error">Please select one...</span>
+
+      </div>   
+
+      <input type="text" name="web" id="comp-web" placeholder="Website (If any)" />
+
+      <input type="button" name="previous" class="previous action-button" value="Previous" /><br>
+      <input type="button" name="next" class="nexttwo action-button" value="Next" />
+   </fieldset>
+
+
+   <!-- -----------------------fieldset  3------------------- -->
+   <fieldset>
+      <h2 class="fs-title">Lorem Ipsum </h2>
+
+      <div class="financial">
+         <p style="color: black;" class="gender">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+         <input type="radio"  name="accounts" value="Yes,i have received education in finance/accounting and thoroughly" required>
+         <label for="male" id="Influence">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </label><br>
+         <input type="radio"  name="accounts" value="No,i have not received education of finace/accounting" >
+         <label for="female" id="Influence" class="gen">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </label><br>
+         <input type="radio"  name="accounts" value="I do not have a formal education i finance /accounting." >
+         <label for="female" id="Influence" class="gen" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. </label><br>
+         <input type="radio"  id="Influence" name="accounts" value="other">
+         <label for="other" id="Influence">Other</label>
+         <span class="error">Please select one...</span>
+
+      </div>   
+
+
+      <div class="finance-elements">
+         <p style="color: black;" class="gender">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+         <input type="radio"  name="finance" value="None" required>
+         <label for="male" id="financialone">None</label><br>
+         <input type="radio"  name="finance" value="Sales, expenses" >
+         <label for="female" id="financialone" class="gen" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. </label><br>
+         <input type="radio"  name="finance" value="P& L - Sales, Gross profit, expenses net profit,BS – Assets,Liabilities" >
+         <label for="female" id="financialone" class="gen">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </label><br>
+         <input type="radio"  name="finance" value="working capital items and also understand the impact drivers of the same" >
+         <label for="female" id="financialone" class="gen">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </label><br>
+         <input type="radio"  name="finance" value="other">
+         <label for="other" id="financialone"  >Other</label>
+         <span class="error">Please select one...</span>
+      </div>   
+
+
+      <input type ="text" id="yearexp" class="company-years" name="company-years" placeholder="Years of business experience" required>
+
+
+      <div class="access-control">
+         <p style="color: black;" class="gender">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+         <input type="radio"  name="access" value="Yes" required>
+         <label for="male" id="accessone">Yes</label><br>
+         <input type="radio"  name="access" value="No" >
+         <label for="female" id="accessone" class="gen" style="margin-right: 504px;">No</label><br>
+         <input type="radio"  name="access" value="Maybe" >
+         <label for="female" id="accessone" class="gen">Maybe</label>
+         <span class="error">Please select one...</span>
+      </div>   
+
+      <input type="button" name="previous" style="margin-top: 25px;" class="previous action-button" value="Previous" /><br>
+      <input type="button" name="next" class="nextthree action-button" value="Next" />
+   </fieldset>
+
+   
+   <!-- --------------field set 4------------------- -->
+   <fieldset>
+      <h2 class="fs-title">Impact of Covid-19</h2>
+
+
+      <p style="color: black;" class="gender">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      <input type="radio"  name="laid" value="Yes" required >
+      <label for="male" id="laidone">Yes</label><br>
+      <input type="radio"  name="laid" value="No" >
+      <label for="female" id="laidone" class="gen" >No</label><br>
+
+      <input type ="text" id="percent" class="companyname" name="bus-percent" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry.  " required>
+
+
+      <h2 class="fs-title">Important Note:</h2>
+      <h5 class="fs-subtitle">* Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
+       <h6 class="finaldesc">*Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
+     
+      <h3 class="declare">Declaration</h3>
+      <input type="checkbox" name="declare" value="yes" >
+      <label for="vehicle1" id="contcheck" class="declaration">I declare that the information provided above are correct to the best of <br>my knowledge and belief</label>
+        
+      <p id="thakstext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br><br></p>
+
+     
+    
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="submit" name="submit" class="submit action-button"  value="Submit" />
+
+   </fieldset>
+
+  
+</form>
+   
+
+<script src="assets/js/app.js"></script>
+
+
+
+<!-- <script>
+   // onclick check box
+   function myFunction() {
+     var checkBox = document.getElementById("myCheck");
+     var text = document.getElementById("text");
+     if (checkBox.checked == true){
+       text.style.display = "block";
+     } else {
+        text.style.display = "none";
+     }
+   }
+
+</script> -->
+
+</body>
+</html>

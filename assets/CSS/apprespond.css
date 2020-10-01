@@ -1,0 +1,796 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+    
+    
+}
+@media screen and (max-width: 280px){
+    h1 {
+        font-weight: 600;
+        padding-top: 0;
+        margin-top: 35px;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 22px;
+        margin-left: 5px;
+    }
+    p {
+        font-family: Montserrat;
+        text-align: justify;
+        margin-left: 12px;
+        margin-right: 14px;
+        color: white;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    h5 {
+        font-family: Montserrat;
+        color: white;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    h6 {
+        padding-top: 0;
+        font-family: Montserrat;
+        color: white;
+        margin-left: 17px;
+        margin-right: 10px;
+    }
+    #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        counter-reset: step;
+        margin-left: -52px;
+    }
+    #progressbar li {
+        list-style-type: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 9px;
+        width: 75px;
+        float: left;
+        position: relative;
+    }
+    #msform fieldset {
+        background: white;
+        border: 0 none;
+        border-radius: 3px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 20px 30px;
+        box-sizing: border-box;
+        width: 260px;
+        position: relative;
+        margin-left: 9px;
+    }
+    #msform input[type=text], input[type=date], input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        font-family: serif;
+    }
+    #msform input[type=radio] {
+        float: left;
+        margin-left: 10px;
+        position: relative;
+        margin-top: 5px;
+    }
+    label {
+        font-size: 13px;
+    }
+    .gender {
+        margin-left: 15px;
+        font-family: roboto slab;
+        font-weight: 900;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+    #contradio {
+        margin-right: 100px;
+        font-family: Montserrat;
+        font-weight: 600;
+        margin-bottom: 18px;
+    }
+    #resgender{
+        font-size: 14px;
+    }
+    #hospital{
+        font-size: 10px;
+    }
+    #contcheck {
+       display: inline-block;
+       margin-right: 0px;
+    }
+    .previous {
+       margin-left: 0px;
+    }
+    #msform .action-button {
+        width: 90px;
+    }
+    #businessone {
+        margin-right: 34px;
+        font-family: sans-serif;
+        font-weight: 400;
+        margin-bottom: 18px;
+    }
+    #moneyone {
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+    .fs-title {
+        font-size: 22px;
+    }
+    #Influence {
+        margin-right: 0px;
+        margin-left: 30px;
+        font-size: 10px;
+    }
+    #financialone {
+        margin-left: 32px;
+    }
+    #accessone {
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+    #laidone {
+        margin-left: 30px;
+    }
+    .finaldesc {
+        margin-left: 10px;
+        font-size: 10px;
+        text-align: left;
+        line-height: 1.5;
+    }
+    .declaration{
+        font-size: 9px;
+    }
+    #thakstext {
+        font-size: 12px;
+        margin-left: 10px;
+        text-align: left;
+        margin-right: 10px;
+    }
+ 
+}
+
+
+@media (min-width: 281px) and (max-width: 380px){
+
+    h1 {
+        font-weight: 600;
+        padding-top: 0;
+        margin-top: 35px;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 22px;
+        margin-left: 5px;
+    }
+    p {
+        font-family: Montserrat;
+        text-align: justify;
+        margin-left: 12px;
+        margin-right: 14px;
+        color: white;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    h5 {
+        font-family: Montserrat;
+        color: white;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    h6 {
+        padding-top: 0;
+        font-family: Montserrat;
+        color: white;
+        margin-left: 17px;
+        margin-right: 10px;
+    }
+    #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        counter-reset: step;
+        margin-left: -52px;
+    }
+    #progressbar li {
+        list-style-type: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 9px;
+        width: 75px;
+        float: left;
+        position: relative;
+        margin-left: 10px;
+    }
+    #msform fieldset {
+        background: white;
+        border: 0 none;
+        border-radius: 3px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 20px 30px;
+        box-sizing: border-box;
+        width: 316px;
+        position: relative;
+        margin-left: 20px;
+    }
+    #msform input[type=text], input[type=date], input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        font-family: serif;
+    }
+    #msform input[type=radio] {
+        float: left;
+        margin-left: 10px;
+        position: relative;
+        margin-top: 5px;
+    }
+    label {
+        font-size: 13px;
+    }
+    .gender {
+        margin-left: 15px;
+        font-family: roboto slab;
+        font-weight: 900;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+    #contradio {
+        margin-right: 100px;
+        font-family: Montserrat;
+        font-weight: 600;
+        margin-bottom: 18px;
+    }
+    #resgender{
+        font-size: 14px;
+    }
+    #hospital{
+        font-size: 10px;
+    }
+    #contcheck {
+       display: inline-block;
+       margin-right: 0px;
+    }
+    .previous {
+       margin-left: 0px;
+    }
+    #msform .action-button {
+        width: 90px;
+    }
+    #businessone {
+        margin-right: 34px;
+        font-family: sans-serif;
+        font-weight: 400;
+        margin-bottom: 18px;
+    }
+    #moneyone {
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+    .fs-title {
+        font-size: 22px;
+    }
+    #Influence {
+        margin-right: 0px;
+        margin-left: 30px;
+        font-size: 10px;
+    }
+    #financialone {
+        margin-left: 32px;
+    }
+    #accessone {
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+    #laidone {
+        margin-left: 30px;
+    }
+    .finaldesc {
+        margin-left: 10px;
+        font-size: 10px;
+        text-align: left;
+        line-height: 1.5;
+    }
+    .declaration{
+        font-size: 9px;
+    }
+    #thakstext {
+        font-size: 12px;
+        margin-left: 10px;
+        text-align: left;
+        margin-right: 10px;
+    }
+  
+}
+
+@media(min-width: 381px) and (max-width: 480px){
+
+    h1 {
+        font-weight: 600;
+        padding-top: 0;
+        margin-top: 35px;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 35px;
+        margin-left: 5px;
+    }
+    p {
+        font-family: Montserrat;
+        text-align: justify;
+        margin-left: 12px;
+        margin-right: 14px;
+        color: white;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    h5 {
+        font-family: Montserrat;
+        color: white;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    h6 {
+        padding-top: 0;
+        font-family: Montserrat;
+        color: white;
+        margin-left: 17px;
+        margin-right: 10px;
+    }
+    #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        counter-reset: step;
+        margin-left: -38px;
+    }
+    #progressbar li {
+        list-style-type: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 9px;
+        width: 75px;
+        float: left;
+        position: relative;
+        margin-left: 15px;
+    }
+    #msform fieldset {
+        background: white;
+        border: 0 none;
+        border-radius: 3px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 20px 30px;
+        box-sizing: border-box;
+        width: 380px;
+        position: relative;
+        margin-left: 10px;
+
+    }
+    #msform input[type=text], input[type=date], input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        font-family: serif;
+    }
+    #msform input[type=radio] {
+        float: left;
+        margin-left: 10px;
+        position: relative;
+        margin-top: 5px;
+    }
+    label {
+        font-size: 13px;
+    }
+    .gender {
+        margin-left: 15px;
+        font-family: roboto slab;
+        font-weight: 900;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+    #contradio {
+        margin-right: 100px;
+        font-family: Montserrat;
+        font-weight: 600;
+        margin-bottom: 18px;
+    }
+    #resgender{
+        font-size: 14px;
+    }
+    #hospital{
+        font-size: 10px;
+    }
+    #contcheck {
+       display: inline-block;
+       margin-right: 0px;
+    }
+    .previous {
+       margin-left: 60px;
+    }
+    #msform .action-button {
+        width: 90px;
+    }
+    #businessone {
+        margin-right: 34px;
+        font-family: sans-serif;
+        font-weight: 400;
+        margin-bottom: 18px;
+    }
+    #moneyone {
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+    .fs-title {
+        font-size: 22px;
+    }
+    #Influence {
+        margin-right: 0px;
+        margin-left: 30px;
+        font-size: 10px;
+    }
+    #financialone {
+        margin-left: 32px;
+    }
+    #accessone {
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+    #laidone {
+        margin-left: 30px;
+    }
+    .finaldesc {
+        margin-left: 10px;
+        font-size: 10px;
+        text-align: left;
+        line-height: 1.5;
+    }
+    .declaration{
+        font-size: 9px;
+    }
+    #thakstext {
+        font-size: 12px;
+        margin-left: 10px;
+        text-align: left;
+        margin-right: 10px;
+    }
+  
+
+    
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    h1 {
+        
+        padding-top: 20px;
+        margin-top: 35px;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 60px;
+        margin-left: 5px;
+    }
+    p {
+        font-family: Montserrat;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: white;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    h5 {
+        font-family: Montserrat;
+        color: white;
+        margin-left: 15px;
+        font-size: 24px;
+    }
+    h6 {
+        padding-top: 0;
+        font-family: Montserrat;
+        color: white;
+        margin-left: 34px;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        counter-reset: step;
+        margin-left: -100px;
+    }
+    #progressbar li {
+        list-style-type: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 9px;
+        width: 115px;
+        float: left;
+        position: relative;
+        margin-left: 0px;
+    }
+    #msform fieldset {
+        background: white;
+        border: 0 none;
+        border-radius: 3px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 20px 30px;
+        box-sizing: border-box;
+        width: 620px;
+        position: relative;
+
+    }
+    #msform input[type=text], input[type=date], input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        font-family: serif;
+    }
+    #msform input[type=radio] {
+        float: left;
+        margin-left: 10px;
+        position: relative;
+        margin-top: 5px;
+    }
+    label {
+        font-size: 13px;
+    }
+    .gender {
+        margin-left: 15px;
+        font-family: roboto slab;
+        font-weight: 900;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+    #contradio {
+        margin-right: 100px;
+        font-family: Montserrat;
+        font-weight: 600;
+        margin-bottom: 18px;
+    }
+    #resgender{
+        font-size: 14px;
+    }
+    #hospital{
+        font-size: 10px;
+    }
+    #contcheck {
+       display: inline-block;
+       margin-right: 0px;
+    }
+    .previous {
+       margin-left: 60px;
+    }
+    #msform .action-button {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    #msform .action-button {
+        width: 90px;
+        margin-left: 70px;
+    }
+    #businessone {
+        margin-right: 34px;
+        font-family: sans-serif;
+        font-weight: 400;
+        margin-bottom: 18px;
+    }
+    #moneyone {
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+    .fs-title {
+        font-size: 22px;
+    }
+    #Influence {
+        margin-right: 0px;
+        margin-left: 30px;
+        font-size: 10px;
+    }
+    #financialone {
+        margin-left: 32px;
+    }
+    #accessone {
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+    #laidone {
+        margin-left: 30px;
+    }
+    .finaldesc {
+        margin-left: 10px;
+        font-size: 10px;
+        text-align: left;
+        line-height: 1.5;
+    }
+    .declaration{
+        font-size: 16px;
+    }
+    #thakstext {
+        font-size: 12px;
+        margin-left: 10px;
+        text-align: left;
+        margin-right: 10px;
+    }
+  
+
+    
+}
+@media  (min-width: 769px) and (max-width:1024px) {
+    h1 {
+        
+        padding-top: 20px;
+        margin-top: 35px;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 64px;
+        margin-left: 5px;
+    }
+    p {
+        font-family: Montserrat;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: white;
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    h5 {
+        font-family: Montserrat;
+        color: white;
+        margin-left: 15px;
+        font-size: 25px;
+    }
+    h6 {
+        padding-top: 0;
+        font-family: Montserrat;
+        color: white;
+        margin-left: 34px;
+        margin-right: 10px;
+        font-size: 19px;
+    }
+    #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        counter-reset: step;
+        margin-left: -128px;
+    }
+    #progressbar li {
+        list-style-type: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 9px;
+        width: 122px;
+        float: left;
+        position: relative;
+        margin-left: 0px;
+    }
+    #msform fieldset {
+        background: white;
+        border: 0 none;
+        border-radius: 3px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 20px 30px;
+        box-sizing: border-box;
+        width: 800px;
+        position: relative;
+        margin-left: -200px;
+
+    }
+    #msform input[type=text], input[type=date], input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        font-family: serif;
+    }
+    #msform input[type=radio] {
+        float: left;
+        margin-left: 10px;
+        position: relative;
+        margin-top: 5px;
+    }
+    label {
+        font-size: 13px;
+    }
+    .gender {
+        margin-left: 15px;
+        font-family: roboto slab;
+        font-weight: 900;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+    #contradio {
+        margin-right: 100px;
+        font-family: Montserrat;
+        font-weight: 600;
+        margin-bottom: 18px;
+    }
+    #resgender{
+        font-size: 14px;
+    }
+    #hospital{
+        font-size: 10px;
+    }
+    #contcheck {
+       display: inline-block;
+       margin-right: 0px;
+    }
+    .previous {
+       margin-left: 60px;
+    }
+ 
+    #msform .action-button {
+        width: 90px;
+        margin-left: 140px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+    #businessone {
+        margin-right: 34px;
+        font-family: sans-serif;
+        font-weight: 400;
+        margin-bottom: 18px;
+    }
+    #moneyone {
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+    .fs-title {
+        font-size: 22px;
+    }
+    #Influence {
+        margin-right: 0px;
+        margin-left: 30px;
+        font-size: 10px;
+    }
+    #financialone {
+        margin-left: 32px;
+    }
+    #accessone {
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+    #laidone {
+        margin-left: 30px;
+    }
+    .finaldesc {
+        margin-left: 10px;
+        font-size: 10px;
+        text-align: left;
+        line-height: 1.5;
+    }
+    .declaration{
+        font-size: 16px;
+    }
+    #thakstext {
+        font-size: 12px;
+        margin-left: 10px;
+        text-align: left;
+        margin-right: 10px;
+    }
+   
+ 
+}

@@ -1,0 +1,346 @@
+body{
+    width: 100%;
+    background-image: url("../images/about_bg\ -\ Copy.png");
+    background-repeat:no-repeat;
+    
+
+    
+}
+
+
+h1{
+  font-weight:600;
+  padding-top:0;
+  margin-top:35px;
+  font-family: 'Nunito', sans-serif ;
+  color: white;
+  text-align: center;
+
+}
+p{
+    font-family: Montserrat;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
+    font-size: 14px;
+}
+h5{
+    font-family: Montserrat;
+    color: white;
+    margin-left: 95px;
+    font-size: 16px;
+
+}
+h6{
+    padding-top:0;
+    font-family: Montserrat ;
+    color: white;  
+    margin-left: 110px;
+
+}
+
+/*form styles*/
+
+#msform {
+	width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 650px;
+    position: relative;
+    margin-left: -110px;
+
+}
+
+
+/*Hide all except first fieldset*/
+
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+
+
+/*inputs*/
+
+#msform input[type=text],  input[type=date],  input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    font-family: serif;
+}
+
+#msform input[type=radio]{
+    float: left;
+    margin-left: 25px;
+    position: relative;
+    margin-top: 5px;
+}
+#contradio{
+    margin-left: 54px;
+    font-family:Montserrat ; 
+    font-weight: 600;
+    margin-bottom: 18px;
+
+}
+.gen{
+    margin-left: 17px;
+}
+.gender{
+    margin-left: 15px;
+    font-family: roboto slab;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 17px;
+
+}
+.residence{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    font-family: serif;
+}
+.checktitle{
+    margin-left: 15px;
+    font-family: Montserrat ;
+    font-weight: 900;
+    margin-top: 20px;
+}
+.checkdesc{
+    margin-left: 15px;
+    font-family: Montserrat ;
+    font-weight: 400;
+
+}
+#msform input[type=checkbox]{
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+label {
+    display: flex !important;
+    margin-bottom: .5rem;
+}
+#businessone{
+    margin-left: 54px;
+    font-family:sans-serif;
+    font-weight: 400;
+    margin-bottom: 18px;
+
+}
+#moneyone{
+    margin-left: 54px;
+    font-family:sans-serif;
+    font-weight: 400;
+    margin-bottom: 18px;
+
+}
+#Influence{
+    margin-left: 54px;
+    font-family:sans-serif;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+#financialone{
+   
+    font-family:sans-serif;
+    font-weight: 400;
+    margin-bottom: 18px;
+    margin-left: 54px;
+
+}
+#accessone{
+    margin-left: 54px;
+    font-family:sans-serif;
+    font-weight: 400;
+}
+#laidone{
+    font-family:sans-serif;
+    font-weight: 400;
+    margin-bottom: 18px;
+    margin-left: 54px;
+
+}
+.declare{
+    font-family:Montserrat ;
+    font-weight: 900;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.thanknote{
+    font-family:Montserrat ;
+    font-weight: 900;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+
+/*buttons*/
+.previous{
+   float: left;
+   margin-left: 110px;
+}
+#msform .action-button {
+	width: 100px;
+	background: #2f388e !important;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 10px 5px;
+    
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    background-image: -webkit-linear-gradient(-30deg, #052157 0%, #91039f 100%) !important;
+}
+
+
+/*headings*/
+
+.fs-title {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-family: Montserrat;
+}
+   
+
+.fs-subtitle {
+	font-weight: 600;
+    font-size: 13px;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align: justify;
+    line-height: 1.5;
+
+}
+.finaldesc{
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: -24px;
+    font-size: 12px;
+
+}
+#thakstext{
+    font-weight: 600;
+    font-size: 13px;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    text-align: justify;
+    line-height: 1.5;
+    font-family: Montserrat;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+/*progressbar*/
+
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+    counter-reset: step;
+    margin-left: -20px;
+}
+
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width:88px;
+	float: left;
+	position: relative;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    line-height: 30px;
+    display: block;
+    font-size: 12px;
+    color: black;
+    background: white;
+    border-radius: 50%;
+    margin: 0 auto 5px auto;
+    font-weight: bolder;
+}
+
+
+/*progressbar connectors*/
+
+#progressbar li:after {
+	content: '';
+    width: 100%;
+    height: 4px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 13px;
+    z-index: -1;
+}
+
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none;
+}
+
+
+/*marking active/completed steps green*/
+
+
+/*The number of the step and the connector before it = green*/
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+   
+    background:#2bc0e4;
+	color:black;
+}
+
+textarea:focus, input:focus , select:focus {
+    outline: none; 
+}
+.error{
+    display: none;
+    color: red;
+    float: left;
+}
+
+
+.error-text
+{
+border-bottom: 1px solid red !important;
+}
+
